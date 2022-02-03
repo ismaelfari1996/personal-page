@@ -5,6 +5,8 @@ import MainBody from './components/home/Jumbotrom';
 import AboutMe from './components/home/aboutme';
 import Projects from './components/home/briefcase';
 import Skill from './components/home/skill';
+import Footer from './components/footer';
+import "./assets/css/styles.css"
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
       <AboutMe />
       <Projects />
       <Skill />
+      <Footer />
     </>
   );
 }

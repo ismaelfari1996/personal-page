@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
-        <div className="container">
-            <h2 className="display-4 text-center">Projects</h2>
+        <div className="container" >
+            <h2 className="display-4 text-center p-5">Projects</h2>
             <div className="row">
                 <div className="col-md-6">
                     <div className="card shadow-lg p-3 mb-5 bg-white rounded card">

@@ -1,7 +1,7 @@
 export default function Skill() {
     return (
-        <div className="bg-white m-0 jumbotron jumbotron-fluid">
-            <div className="p-5 container">
+        <div className="m-0 bg-light" >
+            <div className="p-5 container bg-light" >
                 <h2 className="display-4 pb-5 text-center">Skills</h2>
                 <nav className="nav nav-tabs" role="tablist">
                     <a className="skills-tab lead nav-item nav-link active" role="tab" data-toggle="tab" href="#html">

@@ -1,16 +1,16 @@
 import ProfilePicture from "../../assets/img/profilePicture.jpg";
 export default function AboutMe() {
     return (
-        <div className="m-0 jumbotrom-fluid">
+        <div className="m-0 p-2 " style={{"background":"#f2f2f2"}}>
         <div className="container container-fluid">
             <div className="row">
-                <div className="col-5 d-none d-lg-block align-self-center">
+                <div className="col-5 d-none d-lg-block align-self-center p-5">
                     <img src={ProfilePicture} alt="Abel Farinango"
                         className="border border-secondary rounded-circle"
                         width="375"
                         height="375" />
                 </div>
-                <div className="col-lg-7">
+                <div className="col-lg-7 p-5">
                     <h2 className="display-4 mb-5 text-center">About Me</h2>
                     <p className="lead text-center">
                         Mi nombre es Abel Farinango, me gradue en el año 2021 de la Universidad
