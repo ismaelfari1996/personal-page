@@ -1,7 +1,7 @@
 export default function MainBody() {
     return (
         <div id="home" className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0 " 
-        style={{"background": "linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200%"}}>
+        >
             <div id="stars">
             </div>
             <div className="text-center container">
