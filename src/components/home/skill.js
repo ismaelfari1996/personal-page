@@ -19,10 +19,10 @@ export default function Skill() {
             <div className="p-5 container bg-light " >
                 <h2 className="display-4 pb-5 text-center">Habilidades</h2>
                 <nav className="skill-tab nav nav-tabs" role="tablist">
-                    <a id="tab-header-hard-skill" onClick={setVisibiltyHardSkill} className="skills-tab lead nav-item nav-link active" role="tab" data-toggle="tab" href="#html">
+                    <a id="tab-header-hard-skill" onClick={setVisibiltyHardSkill} className="skills-tab lead nav-item nav-link active" role="tab" data-toggle="tab" href="#skills">
                         Competencias técnicas
                     </a>
-                    <a id="tab-header-soft-skill" onClick={setVisibiltySoftSkill} className="skills-tab lead nav-item nav-link " role="tab" data-toggle="tab" href="#css">
+                    <a id="tab-header-soft-skill" onClick={setVisibiltySoftSkill} className="skills-tab lead nav-item nav-link " role="tab" data-toggle="tab" href="#skills">
                         Habilidades sociales
                     </a>
                 </nav>
