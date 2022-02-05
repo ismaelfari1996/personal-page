@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Facebook",
+        "url":"https://www.facebook.com/abel.farianago",
+        "icon":"fab fa-facebook  fa-3x social-icons"
+    },
+    {
+        "name":"Instagram",
+        "url":"https://www.instagram.com/ismaelfari96/",
+        "icon":"fab fa-instagram  fa-3x social-icons"
+    },
+    {
+        "name":"Github",
+        "url":"https://github.com/ismaelfari1996",
+        "icon":"fab fa-github  fa-3x social-icons"
+    },
+    {
+        "name":"Twitter",
+        "url":"https://www.facebook.com/",
+        "icon":"twitter"
+    },
+    {
+        "name":"Linkedin",
+        "url":"https://www.linkedin.com/in/abel-farinango-40021321a/",
+        "icon":"fab fa-linkedin  fa-3x social-icons"
+    }
+]
