@@ -1,4 +1,4 @@
-Note: The interface of this project was developed taking as reference the project developed by hashirshoaeb
+Note: The interface of this project was developed taking as reference the project developed by [hashirshoaeb](https://github.com/hashirshoaeb/home).
 
 # Getting Started with Create React App
 
