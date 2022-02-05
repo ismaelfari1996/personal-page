@@ -42,7 +42,7 @@ export default function Projects() {
                                                     <i className="fab fa-github"></i> Stars
                                                     <span className="badge badge-dark">571</span>
                                                 </span>
-                                            </a> */}
+                                            </a> */} 
                                             <LastUpdate updated_at={project.pushed_at} />
 
                                         </p>
