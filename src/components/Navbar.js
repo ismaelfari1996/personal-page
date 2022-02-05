@@ -8,10 +8,10 @@ export default function Navigation() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link lead active" aria-current="page" href="#">Acerca de mi</a>
-                        <a className="nav-link lead nav-link" href="#">Proyectos</a>
-                        <a className="nav-link lead" href="#">Habilidades</a>
-                        <a className="nav-link lead" href="#">Curriculum</a>
+                        <a className="nav-link lead active" aria-current="page" href="#about">Acerca</a>
+                        <a className="nav-link lead nav-link" href="#projects">Proyectos</a>
+                        <a className="nav-link lead" href="#skills">Habilidades</a>
+                        <a className="nav-link lead" rel="noopener noreferrer" target={"_blank"} href="https://drive.google.com/file/d/1sh69l-dXehLJ7G-j92ymNpNjMbpcmR-a/view?usp=sharing">Curriculum</a>
                     </div>
                 </div>
             </div>

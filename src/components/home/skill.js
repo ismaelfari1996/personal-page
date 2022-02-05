@@ -1,65 +1,114 @@
+import HardHability from "../../configfiles/skill-hard.json";
+import SoftHability from "../../configfiles/skill-soft.json";
 export default function Skill() {
+    function setVisibiltySoftSkill() {
+        document.getElementById("tab-pane-skill-hard").className = "tab-pane ";
+        document.getElementById("tab-pane-skill-soft").className = "tab-pane active"
+        document.getElementById("tab-header-hard-skill").className = "skills-tab lead nav-item nav-link"
+        document.getElementById("tab-header-soft-skill").className = "skills-tab lead nav-item nav-link active"
+
+    }
+    function setVisibiltyHardSkill() {
+        document.getElementById("tab-pane-skill-hard").className = "tab-pane active"
+        document.getElementById("tab-pane-skill-soft").className = "tab-pane"
+        document.getElementById("tab-header-hard-skill").className = "skills-tab lead nav-item nav-link active"
+        document.getElementById("tab-header-soft-skill").className = "skills-tab lead nav-item nav-link"
+    }
     return (
-        <div className="m-0 bg-light" >
-            <div className="p-5 container bg-light" >
-                <h2 className="display-4 pb-5 text-center">Skills</h2>
-                <nav className="nav nav-tabs" role="tablist">
-                    <a className="skills-tab lead nav-item nav-link active" role="tab" data-toggle="tab" href="#html">
-                        Habilidad tecnica
+        <div id="skills" className="m-0 bg-light" >
+            <div className="p-5 container bg-light " >
+                <h2 className="display-4 pb-5 text-center">Habilidades</h2>
+                <nav className="skill-tab nav nav-tabs" role="tablist">
+                    <a id="tab-header-hard-skill" onClick={setVisibiltyHardSkill} className="skills-tab lead nav-item nav-link active" role="tab" data-toggle="tab" href="#html">
+                        Competencias técnicas
                     </a>
-                    <a className="skills-tab lead nav-item nav-link " role="tab" data-toggle="tab" href="#css">
+                    <a id="tab-header-soft-skill" onClick={setVisibiltySoftSkill} className="skills-tab lead nav-item nav-link " role="tab" data-toggle="tab" href="#css">
                         Habilidades sociales
                     </a>
                 </nav>
                 <div className="tab-content">
-                    <div className="tab-pane active" id="html">
+                    <div id="tab-pane-skill-hard" className="tab-pane active" >
                         <div className="fade tab-pane active show">
                             <div className="pt-3 px-1 row">
                                 <div className="col-md-6 col-12">
-                                    <div style={{ width: "95%" }}>
-                                        <p className="lead mb-1 mt-2">
-                                            JavaScript
-                                        </p>
-                                        <div className=" progress-bar-animation progress">
-                                            <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" style={{ width: "90%" }}></div>
-                                        </div>
-                                    </div>
-                                    <div style={{ width: "95%" }}>
-                                        <p className="lead mb-1 mt-2">
-                                            Java
-                                        </p>
-                                        <div className=" progress-bar-animation progress">
-                                            <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar" style={{ width: "70%" }}></div>
-                                        </div>
-                                    </div>
+                                    {HardHability.slice(0, Math.floor(HardHability.length / 2)).map((skill, index) => {
+                                        return (
+
+                                            <div style={{ width: "95%" }}>
+                                                <p className="lead mb-1 mt-2">
+                                                    {skill.skill}
+                                                </p>
+                                                <div className=" progress-bar-animation progress">
+                                                    <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
 
                                 <div className="col-md-6 col-12">
-                                    <div style={{ width: "95%" }}>
-                                        <p className="lead mb-1 mt-2">
-                                            Organizacion
-                                        </p>
-                                        <div className=" progress-bar-animation progress">
-                                            <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" style={{ width: "90%" }}></div>
-                                        </div>
-                                    </div>
-                                    <div style={{ width: "95%" }}>
-                                        <p className="lead mb-1 mt-2">
-                                            Trabajo en equipo
-                                        </p>
-                                        <div className=" progress-bar-animation progress">
-                                            <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar" style={{ width: "70%" }}></div>
-                                        </div>
-                                    </div>
+                                    {HardHability.slice(Math.floor(HardHability.length / 2), HardHability.length).map((skill, index) => {
+                                        return (
+                                            <div style={{ width: "95%" }}>
+                                                <p className="lead mb-1 mt-2">
+                                                    {skill.skill}
+                                                </p>
+                                                <div className=" progress-bar-animation progress">
+                                                    <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    {/* --------------- */}
+                    <div id="tab-pane-skill-soft" className="tab-pane " >
+                        <div className="tab-pane fade active show" >
+                            <div className="pt-3 px-1 row">
+                                <div className="col-md-6 col-12">
+                                    {SoftHability.slice(0, Math.floor(SoftHability.length / 2)).map((skill, index) => {
+                                        return (
+                                            <div style={{ width: "95%" }}>
+                                                <p className="lead mb-1 mt-2">
+                                                    {skill.skill}
+                                                </p>
+                                                <div className=" progress-bar-animation progress">
+                                                    <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="col-md-6 col-12">
+                                    {SoftHability.slice(Math.floor(SoftHability.length / 2), SoftHability.length).map((skill, index) => {
+                                        return (
+                                            <div style={{ width: "95%" }}>
+                                                <p className="lead mb-1 mt-2">
+                                                    {skill.skill}
+                                                </p>
+                                                <div className=" progress-bar-animation progress">
+                                                    <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })} 
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                    {/* ------------- */}
 
                 </div>
+
+
 
             </div>
         </div>
     );
 }
+

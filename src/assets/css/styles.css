@@ -8,4 +8,22 @@
 background: linear-gradient(136deg,#3fa0d1, #55b1cf); /*linear-gradient(136deg, rgb(68, 132, 206), rgb(26, 215, 192), rgb(255, 155, 17), rgb(155, 89, 182), rgb(255, 127, 127), rgb(236, 240, 241)) 0% 0% / 1200% 1200% no-repeat rgb(255, 255, 255);
 */
 }
-
+.card-link{
+    text-decoration: none;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    cursor: auto;
+}
+.mr-3{
+    margin-right: 1rem;
+}
+.skill-tab{
+    flex-grow: 1;
+    text-align: center;
+}
+.progress-bar-animation{
+    animation: progress 1.5s ease-in-out forwards;
+}
