@@ -1,3 +1,5 @@
+Note: The interface of this project was developed taking as reference the project developed by hashirshoaeb
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
