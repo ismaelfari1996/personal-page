@@ -13,10 +13,12 @@ export default function AboutMe() {
                 <div className="col-lg-7 p-5">
                     <h2 className="display-4 mb-5 text-center">Acerca de mi</h2>
                     <p className="lead text-center">
-                        Mi nombre es Abel Farinango, graduado en el año 2021 de la Universidad
+                        Me llamo Ismael Farinango, graduado en el año 2021 de la Universidad
                         Politécnica Salesiana como Ingeniero de Sistemas con mención en Informática 
                         para la Gestión. Siempre estoy buscando aprender nuevas tecnologías y 
-                        me gusta trabajar en equipo.
+                        me gusta trabajar en equipo. Me considero una persona responsable, 
+                        con una actitud positiva y una gran capacidad de adaptación. Mi objetivo
+                        profesional es llegar a ser un gran desarrollador de software.  
                     </p>
                     <p className="lead text-center">
                         <button className="btn btn-outline-dark btn-lg " href="https://drive.google.com/file/d/1sh69l-dXehLJ7G-j92ymNpNjMbpcmR-a/view?usp=sharing" role="button" aria-label="Learn more about me">
