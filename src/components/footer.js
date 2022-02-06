@@ -19,7 +19,7 @@ export default function Footer() {
 
                     </div>
                     <div className="text-center p-3" style={{ "background-color": "rgba(0, 0, 0, 0.2)" }}>
-                        Desarrollado por  Ismael Farinango - 2022
+                        Desarrollado por: Ismael Farinango - 2022
                         <p className="text-white">
                         <small className="text-white">
                             Esta página es de código abierto, sientase libre de modificarlas o usarla en cualquier forma que desee.
