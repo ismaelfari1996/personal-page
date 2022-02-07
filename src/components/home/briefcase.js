@@ -14,10 +14,10 @@ export default function Projects() {
 
     return (
         <div id="projects" className="container" >
-            <h2 className="display-4 text-center p-5">Últimos Proyectos</h2>
+            <h1 className="display-4 text-center p-5">Últimos Proyectos</h1>
             <div className="row">
                 {
-                    projects.slice(0,3).map((project, index) => {
+                    projects.slice(0,4).map((project, index) => {
                         return (
                             <div className="col-md-6">
                                 <div className="card shadow-lg p-3 mb-5 bg-white rounded card">

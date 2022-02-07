@@ -4,11 +4,11 @@ export default function AboutMe() {
         <div id="about" className="m-0 p-2 " style={{"background":"#f2f2f2"}}>
         <div className="container container-fluid">
             <div className="row">
-                <div className="col-5 d-none d-lg-block align-self-center p-5">
+                <div className="col-5 d-none d-lg-block align-self-center p-1">
                     <img src={ProfilePicture} alt="Abel Farinango"
-                        className="border border-secondary rounded-circle"
-                        width="375"
-                        height="375" />
+                        className="border border-secondary rounded"
+                        width="500"
+                        height="400" />
                 </div>
                 <div className="col-lg-7 p-5">
                     <h2 className="display-4 mb-5 text-center">Acerca de mi</h2>
@@ -21,9 +21,14 @@ export default function AboutMe() {
                         profesional es llegar a ser un gran desarrollador de software.  
                     </p>
                     <p className="lead text-center">
-                        <button className="btn btn-outline-dark btn-lg " href="https://drive.google.com/file/d/1sh69l-dXehLJ7G-j92ymNpNjMbpcmR-a/view?usp=sharing" role="button" aria-label="Learn more about me">
+                        <a className="btn btn-outline-dark btn-lg " 
+                         target={"_blank"} 
+                         href="https://drive.google.com/file/d/1sh69l-dXehLJ7G-j92ymNpNjMbpcmR-a/view?usp=sharing"
+                         role="button" 
+                         rel="noopener noreferrer"
+                        aria-label="Learn more about me">
                             Curriculum
-                        </button>
+                        </a>
                     </p>
                 </div>
 

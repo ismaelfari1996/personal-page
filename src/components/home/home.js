@@ -14,7 +14,7 @@ export default function MainBody() {
                     {
                         SocialNetwork.map((social, index) => {
                             return (
-                            <a className="p-2" target="_blank" rel="noopener noreferrer" href={social.url} aria-label={"My "+social.name}>
+                            <a className="p-2" target={"_blank"} rel="noopener noreferrer" href={social.url} aria-label={"My "+social.name}>
                                 <i className={social.icon}></i>
                             </a>    
                             );
