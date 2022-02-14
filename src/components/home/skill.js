@@ -14,6 +14,7 @@ export default function Skill() {
         document.getElementById("tab-header-hard-skill").className = "skills-tab lead nav-item nav-link active"
         document.getElementById("tab-header-soft-skill").className = "skills-tab lead nav-item nav-link"
     }
+
     return (
         <div id="skills" className="m-0 bg-light" >
             <div className="p-5 container bg-light " >
@@ -39,7 +40,7 @@ export default function Skill() {
                                                     {skill.skill}
                                                 </p>
                                                 <div className=" progress-bar-animation progress">
-                                                    <div className="progress-bar" aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
+                                                    <div className="progress-bar"  aria-valuemax="100" aria-valuemin="0" aria-valuenow={skill.percent} role="progressbar" style={{ width: skill.percent }}></div>
                                                 </div>
                                             </div>
                                         );

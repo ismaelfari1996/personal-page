@@ -24,6 +24,15 @@ background: linear-gradient(136deg,#3fa0d1, #55b1cf); /*linear-gradient(136deg, 
     flex-grow: 1;
     text-align: center;
 }
-.progress-bar-animation{
+.progress-bar::after{
+    left: -100px;
+}
+
+.progress-bar{
     animation: progress 1.5s ease-in-out forwards;
+}
+@keyframes progress{
+    to{
+        transform: translateX(10%);
+    }
 }
