@@ -1,6 +1,17 @@
-export default function Navigation() {
+export default function Navigation(props) {
+    window.onscroll = function() {
+        let y = window.scrollY;
+        if(y>500){
+            document.getElementById("navbar").classList.remove("bg-transparent");
+            document.getElementById("navbar").classList.add("bg-light");
+        }else{
+            document.getElementById("navbar").classList.remove("bg-light");
+            document.getElementById("navbar").classList.add("bg-transparent");
+        }
+      };
+     
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent">
+        <nav id="navbar" className="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
             <div className="container-fluid">
                 <a className="brand navbar-brand" href="#"> / Ismael */ </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,10 +19,19 @@ export default function Navigation() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link lead active" aria-current="page" href="#about">Acerca</a>
-                        <a className="nav-link lead nav-link" href="#projects">Proyectos</a>
-                        <a className="nav-link lead" href="#skills">Habilidades</a>
-                        <a className="nav-link lead" rel="noopener noreferrer" target={"_blank"} href="https://drive.google.com/file/d/1sh69l-dXehLJ7G-j92ymNpNjMbpcmR-a/view?usp=sharing">Curriculum</a>
+                        {
+                            props.NavItems.map((item, index) => {
+                                return (
+                                    <a className={item.active?"nav-link lead active":"nav-link lead"}
+                                     aria-current={item.ariacurrent?"page":""}
+                                     rel="noopener noreferrer"
+                                     target={item.target}
+                                     href={item.url}
+                                     key={index}>{item.name}</a>
+                                );
+                            }
+                            )
+                        }
                     </div>
                 </div>
             </div>

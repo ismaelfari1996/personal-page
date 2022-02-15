@@ -3,10 +3,10 @@ export default function Footer() {
         <div className=" my-0">
 
             <section className="">
-                <footer className="text-center text-white" style={{ "background-color": "#0a4275" }}>
-                    <div class="container p-4 pb-0">
+                <footer className="text-center text-white" style={{ "backgroundColor": "#0a4275" }}>
+                    <div className="container p-4 pb-0">
 
-                        <section class="">
+                        <section className="">
                             <p className="d-flex justify-content-center align-items-center">
                                 <span className="me-3">
                                     E-mail: abel_fari@hotmail.com
@@ -18,7 +18,7 @@ export default function Footer() {
                         </section>
 
                     </div>
-                    <div className="text-center p-3" style={{ "background-color": "rgba(0, 0, 0, 0.2)" }}>
+                    <div className="text-center p-3" style={{ "backgroundColor": "rgba(0, 0, 0, 0.2)" }}>
                         Desarrollado por: Ismael Farinango - 2022
                         <p className="text-white">
                         <small className="text-white">

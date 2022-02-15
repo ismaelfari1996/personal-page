@@ -19,7 +19,7 @@ export default function Projects() {
                 {
                     projects.slice(0,4).map((project, index) => {
                         return (
-                            <div className="col-md-6">
+                            <div className="col-md-6" key={index}>
                                 <div className="card shadow-lg p-3 mb-5 bg-white rounded card">
                                     <div className="card-body">
                                         <h5 className="card-title"> {project.name}</h5>
@@ -106,7 +106,6 @@ const Languages = ({ languages_url }) => {
     let total = 0;
     for (let i in data) {
         array.push(i);
-        console.log(i)
         total += data[i];
     }
     return (
@@ -114,8 +113,11 @@ const Languages = ({ languages_url }) => {
             Lenguajes:{" "}
             {
                 array.length ?
-                    array.map((item) => (
-                        <a className="badge badge-light card-link" href="#" __blank>
+                    array.map((item,index) => (
+                        <a className="badge badge-light card-link"
+                         href="#" 
+                         target={"_blank"}
+                         key={index}>
                             {item==="Hack"?"Otros":item}:{" "}{Math.trunc(((data[item]/total))*1000)/10} %
                         </a>
                     )) : "No disponible"

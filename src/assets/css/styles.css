@@ -24,6 +24,8 @@ background: linear-gradient(136deg,#3fa0d1, #55b1cf); /*linear-gradient(136deg, 
     flex-grow: 1;
     text-align: center;
 }
+
+/* 
 .progress-bar::after{
     left: -100px;
 }
@@ -35,4 +37,4 @@ background: linear-gradient(136deg,#3fa0d1, #55b1cf); /*linear-gradient(136deg, 
     to{
         transform: translateX(10%);
     }
-}
+} */

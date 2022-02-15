@@ -1,6 +1,5 @@
-import HardHability from "../../configfiles/skill-hard.json";
-import SoftHability from "../../configfiles/skill-soft.json";
-export default function Skill() {
+
+export default function Skill(props) {
     function setVisibiltySoftSkill() {
         document.getElementById("tab-pane-skill-hard").className = "tab-pane ";
         document.getElementById("tab-pane-skill-soft").className = "tab-pane active"
@@ -32,10 +31,10 @@ export default function Skill() {
                         <div className="fade tab-pane active show">
                             <div className="pt-3 px-1 row">
                                 <div className="col-md-6 col-12">
-                                    {HardHability.slice(0, Math.floor(HardHability.length / 2)).map((skill, index) => {
+                                    {props.HardHability.slice(0, Math.floor(props.HardHability.length / 2)).map((skill, index) => {
                                         return (
 
-                                            <div style={{ width: "95%" }}>
+                                            <div style={{ width: "95%" }} key={index} >
                                                 <p className="lead mb-1 mt-2">
                                                     {skill.skill}
                                                 </p>
@@ -48,9 +47,9 @@ export default function Skill() {
                                 </div>
 
                                 <div className="col-md-6 col-12">
-                                    {HardHability.slice(Math.floor(HardHability.length / 2), HardHability.length).map((skill, index) => {
+                                    {props.HardHability.slice(Math.floor(props.HardHability.length / 2), props.HardHability.length).map((skill, index) => {
                                         return (
-                                            <div style={{ width: "95%" }}>
+                                            <div style={{ width: "95%" }} key={index}>
                                                 <p className="lead mb-1 mt-2">
                                                     {skill.skill}
                                                 </p>
@@ -71,9 +70,9 @@ export default function Skill() {
                         <div className="tab-pane fade active show" >
                             <div className="pt-3 px-1 row">
                                 <div className="col-md-6 col-12">
-                                    {SoftHability.slice(0, Math.floor(SoftHability.length / 2)).map((skill, index) => {
+                                    {props.SoftHability.slice(0, Math.floor(props.SoftHability.length / 2)).map((skill, index) => {
                                         return (
-                                            <div style={{ width: "95%" }}>
+                                            <div style={{ width: "95%" }}  key={index}>
                                                 <p className="lead mb-1 mt-2">
                                                     {skill.skill}
                                                 </p>
@@ -85,9 +84,9 @@ export default function Skill() {
                                     })}
                                 </div>
                                 <div className="col-md-6 col-12">
-                                    {SoftHability.slice(Math.floor(SoftHability.length / 2), SoftHability.length).map((skill, index) => {
+                                    {props.SoftHability.slice(Math.floor(props.SoftHability.length / 2), props.SoftHability.length).map((skill, index) => {
                                         return (
-                                            <div style={{ width: "95%" }}>
+                                            <div style={{ width: "95%" }} key={index}>
                                                 <p className="lead mb-1 mt-2">
                                                     {skill.skill}
                                                 </p>

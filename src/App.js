@@ -1,20 +1,15 @@
 import React from 'react';
-import './App.css';
-import Navigation from './components/Navbar';
-import MainBody from './components/home/home';
-import AboutMe from './components/home/aboutme';
-import Projects from './components/home/briefcase';
-import Skill from './components/home/skill';
-import Footer from './components/footer';
+import {Navigation, MainBody, AboutMe, Projects, Skill, Footer} from './components';
+import { HardHability, SoftHability, NavItems, SocialNetwork } from './components/home/configfiles/config';
 import "./assets/css/styles.css"
 function App() {
   return (
     <>
-      <Navigation />
-      <MainBody />
+      <Navigation NavItems={NavItems}/>
+      <MainBody SocialNetwork={SocialNetwork} />
       <AboutMe />
       <Projects />
-      <Skill />
+      <Skill HardHability={HardHability} SoftHability={SoftHability} />
       <Footer />
     </>
   );
