@@ -12,7 +12,7 @@ export default function Footer() {
                                     E-mail: abel_fari@hotmail.com
                                 </span>
                                 <span className="me-3">
-                                    Teléfono/Whatsapp: 0984593162
+                                    Teléfono/Whatsapp:(+593) 0999545984
                                 </span>
                             </p>
                         </section>

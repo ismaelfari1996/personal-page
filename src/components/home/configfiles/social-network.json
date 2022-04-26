@@ -5,6 +5,11 @@
         "icon":"fab fa-facebook  fa-3x social-icons"
     },
     {
+        "name":"Whatsapp",
+        "url":"https://api.whatsapp.com/send?phone=593999545984&text=Hola,%20Ismael%20te%20saluda%20¿En%20qué%20te%20puedo%20ayudar?",
+        "icon":"fab fa-whatsapp fa-3x social-icons"
+    },
+    {
         "name":"Instagram",
         "url":"https://www.instagram.com/ismaelfari96/",
         "icon":"fab fa-instagram  fa-3x social-icons"
