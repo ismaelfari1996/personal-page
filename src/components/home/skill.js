@@ -1,3 +1,4 @@
+import React from "react";
 import HardHability from "../../configfiles/skill-hard.json";
 import SoftHability from "../../configfiles/skill-soft.json";
 export default function Skill() {

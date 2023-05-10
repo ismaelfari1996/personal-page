@@ -1,3 +1,4 @@
+import React from "react";
 import SocialNetwork from "../../configfiles/social-network.json";
 export default function MainBody() {
     return (

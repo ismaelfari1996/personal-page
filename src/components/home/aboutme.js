@@ -1,3 +1,4 @@
+import React from "react";
 import ProfilePicture from "../../assets/img/profilePicture.jpg";
 export default function AboutMe() {
     return (
